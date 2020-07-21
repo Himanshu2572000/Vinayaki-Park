@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Wild Life</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <p>
+        <span id="logo"><img src="img/logo/logo.png" alt="Logo" /></span>
+        <span id="parkname">विनायकी </span>
+        <span id="park">Park</span>
+      </p>
+
+      <hr id="hr">
+
+      <div>
+        <ul id="navlist">
+          <li class="navitem"><a href=""> GALLERY </a></li>
+          <!-- <li class="navitem"><a href=""> SPECIAL OFFERS </a></li> -->
+          <li class="navitem"><a href=""> NEWS & EVENTS </a></li>
+          <li class="navitem"><a href=""> ABOUT US </a></li>
+          <li class="navitem"><a href="#contact-section"> CONTACT </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <hr id="afternav">
+
+    <!-- Slide -->
+    <div id="slide">
+      <figure>
+        <img class="slideitem0" src="img/slide/slide1.jpg" alt="Slide" />
+        <img class="slideitem1" src="img/slide/slide2.jpg" alt="Slide" />
+        <img class="slideitem2" src="img/slide/slide3.jpg" alt="Slide" />
+        <img class="slideitem3" src="img/slide/slide4.jpg" alt="Slide" />
+        <img class="slideitem4" src="img/slide/slide5.jpg" alt="Slide" />
+        <img class="slideitem5" src="img/slide/slide6.jpg" alt="Slide" />
+        <img class="slideitem6" src="img/slide/slide7.jpg" alt="Slide" />
+        <img class="slideitem7" src="img/slide/slide8.jpg" alt="Slide" />
+        <img class="slideitem8" src="img/slide/slide9.jpg" alt="Slide" />
+        <img class="slideitem9" src="img/slide/slide10.jpg" alt="Slide" />
+      </figure>
+    </div>
+
+    <!-- Animal Intro -->
+    <div id="animal-info">
+      <div>
+        <h1>Save These Wild Animals</h1>
+      </div>
+
+      <div id="animal-card">
+        <div class="card-box">
+          <div class="card-img">
+            <img src="img/card/card1.jpg" alt="" />
+          </div>
+          <h2>Orangutan</h2>
+          <div class="card-content">
+            <p>
+              The name orangutan means “man of the forest” in the Malay
+              language, and they are the world’s largest tree-climbing mammal.
+              They make nests of trees of vegetation to sleep in at night
+              always.
+            </p>
+          </div>
+          <div class="card-btn">
+            <button><a href="">read more</a></button>
+          </div>
+        </div>
+
+        <div class="card-box">
+          <div class="card-img">
+            <img src="img/card/card2.jpg" alt="" />
+          </div>
+          <h2>Tree Kangaroo</h2>
+          <div class="card-content">
+            <p>
+              Tree kangaroos live in lowland and mountainous rainforests in
+              Papua New Guinea, Indonesia, and the far north of Queensland,
+              Australia. They have adapted to life in the trees, with their
+              small legs.
+            </p>
+          </div>
+          <div class="card-btn">
+            <button><a href="">read more</a></button>
+          </div>
+        </div>
+
+        <div class="card-box">
+          <div class="card-img">
+            <img src="img/card/card3.jpg" alt="" />
+          </div>
+          <h2>Primates</h2>
+          <div class="card-content">
+            <p>
+              The primate is a eutherian mammal constituting the taxonomic order
+              Primates. Primates arose 85–55 million years ago first from small
+              terrestrial mammals, which living in the trees.
+            </p>
+          </div>
+          <div class="card-btn">
+            <button><a href="">read more</a></button>
+          </div>
+        </div>
+
+        <div class="card-box">
+          <div class="card-img">
+            <img src="img/card/card4.jpg" alt="" />
+          </div>
+          <h2>Giant Panda</h2>
+          <div class="card-content">
+            <p>
+              Pandas live mainly in bamboo forests high in the mountains of
+              western China, where they subsist almost entirely on bamboo. They
+              play a crucial role in the bamboo forests by spreading seeds.
+            </p>
+          </div>
+          <div class="card-btn">
+            <button><a href="">read more</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Rescue Foundation -->
+    <div id="rescue-section">
+      <div id="rescue">
+        <div>
+          <img src="img/rescue/rescue1.png" alt="" />
+        </div>
+        <div>
+          <h1>Animal Rescue Foundation</h1>
+          <div class="rescue-btn">
+              <button>Donate To Help Them</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Contact Form -->
+
+<div id="contact-section">
+<div class="container">
+    <h1>Get In Touch !</h1>
+    <form class="myForm" action="/contact" method="post">
+      <input class="myInput" type="text" name="name" placeholder="Enter Your Name"/>
+      <input class="myInput" type="phone" name="phone" placeholder="Enter Your Phone Number"/>
+      <input class="myInput" type="email" name="email" placeholder="Enter Your email id"/>
+      <input class="myInput" type="text" name="desc" placeholder="Enter Your concern"/>
+      <button class="btn">Submit</button>
+    </form>
+    <div class="contact-img">
+        <img src="img/contact/contact.png" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+
+<footer id="footer">Copyright © 2020 VinayakiPark.com | All right reserved!</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+
+    <!-- Sliding -->
+    <script>
+      setInterval(() => {
+        let imgNum = parseInt(Math.floor(Math.random() * 10));
+        document.querySelector(`.slideitem${imgNum}`).style.opacity = "1";
+        document.querySelector(`.slideitem${imgNum}`).style.zindex = "1";
+        setTimeout(() => {
+          document.querySelector(`.slideitem${imgNum}`).style.opacity = "0";
+          document.querySelector(`.slideitem${imgNum}`).style.zindex = "0";
+        }, 1999);
+      }, 2000);
+    </script>
+  </body>
+</html>
